@@ -6,15 +6,15 @@
 
 Напишите программу, которая строит квадрат, затем масштабирует его с коэффициентом m = 0.9 с помощью матрицы масштабирования, а потом вращает этот уменьшенный квадрат на угол α = π/32. Начальные координаты квадрата:
 
-$$ X = \begin{pmatrix} 2 & 2 \\ -2 & 2 \\ -2 & -2 \\ 2 & -2 \end{pmatrix}^T $$
+$$ X = \begin{pmatrix} 2 & 2 \\\ -2 & 2 \\\ -2 & -2 \\\ 2 & -2 \end{pmatrix}^T $$
 
 Матрица масштабирования: 
 
-$$ M = \begin{pmatrix} m & 0 \\ 0 & m \end{pmatrix} $$
+$$ M = \begin{pmatrix} m & 0 \\\ 0 & m \end{pmatrix} $$
 
 Матрица вращения:
 
-$$ V = \begin{pmatrix} \cos(\alpha) & -\sin(\alpha) \\ \sin(\alpha) & \cos(\alpha) \end{pmatrix} $$
+$$ V = \begin{pmatrix} \cos(\alpha) & -\sin(\alpha) \\\ \sin(\alpha) & \cos(\alpha) \end{pmatrix} $$
 
 Комбинированное преобразование:
 

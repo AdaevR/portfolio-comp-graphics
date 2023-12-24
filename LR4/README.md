@@ -14,7 +14,7 @@
 - создать класс Drawer для рисования графических примитивов и реализации графики. Для этого использовать исходники соответствующих функций на C и перевести их на Python как метода этого класса. Инициализировать графику библиотеки pygame внутри метода initialize.
 - Использовать однородные координаты для координат исходного квадрата
 
-$$ L = \begin{pmatrix} 2 & 0.5 & 1 \\ 8 & 0.5 & 1 \\ 8 & 0.5 & 1 \\ 2 & 6.5 & 1 \end{pmatrix} $$
+$$ L = \begin{pmatrix} 2 & 0.5 & 1 \\\ 8 & 0.5 & 1 \\\ 8 & 0.5 & 1 \\\ 2 & 6.5 & 1 \end{pmatrix} $$
 
 - Заменить формулы преобразования для координат вершин квадрата в задаче 2.2 из предыдущего занятия на произведение матриц преобразований в однородных координатах:
 
@@ -27,11 +27,11 @@ $$ L^* = L \times T_{\Delta}(-x_c, -y_c), \times T_S(S_x, S_y), \times T_R(\alph
 
 Матрицы преобразований в однородных координатах (при h = 1) заданы следующим образом: 
 
-$$ T_{\Delta} ({\Delta}_x, {\Delta}_y) = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ {\Delta}_x & {\Delta}_y & 1 \end{bmatrix} $$
+$$ T_{\Delta} ({\Delta}_x, {\Delta}_y) = \begin{bmatrix} 1 & 0 & 0 \\\ 0 & 1 & 0 \\\ {\Delta}_x & {\Delta}_y & 1 \end{bmatrix} $$
 
-$$ T_S(S_x, S_y) = \begin{bmatrix} S_x & 0 & 0 \\ 0 & S_y & 0 \\ 0 & 0 & 1 \end{bmatrix} $$
+$$ T_S(S_x, S_y) = \begin{bmatrix} S_x & 0 & 0 \\\ 0 & S_y & 0 \\\ 0 & 0 & 1 \end{bmatrix} $$
 
-$$ T_R(\alpha) = \begin{bmatrix} \cos(\alpha) & \sin(\alpha) & 0 \\ -\sin(\alpha) & \cos(\alpha) & 0 \\ 0 & 0 & 1 \end{bmatrix} $$
+$$ T_R(\alpha) = \begin{bmatrix} \cos(\alpha) & \sin(\alpha) & 0 \\\ -\sin(\alpha) & \cos(\alpha) & 0 \\\ 0 & 0 & 1 \end{bmatrix} $$
 
 **Решение:**
 
